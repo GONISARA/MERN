@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table Example</title>
+    <style>
+        table {
+            margin: 0 auto;
+            width: 80%;
+            border-collapse: separate; /* Ensures that borders can be rounded */
+            border-spacing: 0; /* Removes space between cells */
+            border: 2px solid #9fd5d2; /* Border around the entire table */
+            border-radius: 15px; /* Rounded corners for the entire table */
+            overflow: hidden; /* Necessary to ensure the rounded borders for the table */
+            background-color: #9fd5d2;
+        }
+
+        th, td {
+            border: 2px solid white; /* Borders for individual table cells */
+            padding: 10px;
+            text-align: left;
+        }
+
+        th, td {
+            border-radius: 15px; /* Rounded borders for individual table cells */
+        }
+
+        th {
+            background-color: #88c0be; /* Slightly different background color for header cells */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eva</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+

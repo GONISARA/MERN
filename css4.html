@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partial Slide-out Sidenav</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 80px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: transparent;
+            overflow-x: hidden;
+            transition: 0.5s;
+            z-index: 1;
+        }
+
+        .sidenav a {
+            padding: 10px 5px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+            width: 100%;
+            text-align: center;
+        }
+
+        .sidenav a:hover {
+            width: 200px;
+            position: absolute;
+            left: 80px;
+        }
+
+        .home {
+            background-color: #4CAF50;
+        }
+
+        .about {
+            background-color: #2196F3;
+        }
+
+        .services {
+            background-color: #f44336;
+        }
+
+        .contact {
+            background-color: #ff9800;
+        }
+
+        .main-content {
+            margin-left: 90px;
+            transition: margin-left .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+        <a href="#" class="home">Home</a>
+        <a href="#" class="about">About</a>
+        <a href="#" class="services">Services</a>
+        <a href="#" class="contact">Contact</a>
+    </div>
+
+    <div class="main-content">
+        <h2>Welcome</h2>
+    </div>
+</body>
+
+</html>
